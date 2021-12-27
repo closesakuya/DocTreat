@@ -54,9 +54,9 @@ def _mod_file_attr(src: str, create_st: str, create_ed: str,
     delta_time = (stamp_ed - stamp_st).total_seconds()
     createTime = stamp_st + datetime.timedelta(seconds=random.randint(0, int(delta_time)))
     modifyTime = createTime + datetime\
-        .timedelta(seconds=random.randint(int(mod_range_st), int(mod_range_ed)))
+        .timedelta(hours=random.randint(int(mod_range_st), int(mod_range_ed)))
     accessTime = modifyTime + datetime\
-        .timedelta(seconds=random.randint(int(vst_range_st), int(vst_range_ed)))
+        .timedelta(hours=random.randint(int(vst_range_st), int(vst_range_ed)))
 
     logger("{0} --> 创建:{1} | 修改:{2} | 访问:{3}".format(src, createTime, modifyTime, accessTime))
     if os.path.isfile(src):
