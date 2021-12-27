@@ -97,6 +97,7 @@ class Ui_water_mainwd(object):
         self.date_modfile_st.setObjectName(u"date_modfile_st")
         self.date_modfile_st.setGeometry(QRect(280, 80, 66, 22))
         self.date_modfile_st.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.date_modfile_st.setMaximum(99999999.000000000000000)
         self.date_modfile_st.setValue(1.000000000000000)
         self.label_26 = QLabel(self.tab_1)
         self.label_26.setObjectName(u"label_26")
@@ -105,6 +106,7 @@ class Ui_water_mainwd(object):
         self.date_modfile_ed.setObjectName(u"date_modfile_ed")
         self.date_modfile_ed.setGeometry(QRect(440, 80, 66, 22))
         self.date_modfile_ed.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.date_modfile_ed.setMaximum(99999999.000000000000000)
         self.date_modfile_ed.setValue(48.000000000000000)
         self.label_27 = QLabel(self.tab_1)
         self.label_27.setObjectName(u"label_27")
@@ -116,11 +118,13 @@ class Ui_water_mainwd(object):
         self.date_visfile_ed.setObjectName(u"date_visfile_ed")
         self.date_visfile_ed.setGeometry(QRect(440, 130, 66, 22))
         self.date_visfile_ed.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.date_visfile_ed.setMaximum(99999999.000000000000000)
         self.date_visfile_ed.setValue(48.000000000000000)
         self.date_visfile_st = QDoubleSpinBox(self.tab_1)
         self.date_visfile_st.setObjectName(u"date_visfile_st")
         self.date_visfile_st.setGeometry(QRect(280, 130, 66, 22))
         self.date_visfile_st.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.date_visfile_st.setMaximum(99999999.000000000000000)
         self.date_visfile_st.setValue(1.000000000000000)
         self.label_29 = QLabel(self.tab_1)
         self.label_29.setObjectName(u"label_29")
@@ -1106,7 +1110,7 @@ class Ui_water_mainwd(object):
 
         self.retranslateUi(water_mainwd)
 
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(water_mainwd)

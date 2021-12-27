@@ -301,10 +301,10 @@ class UI(QMainWindow, Ui_water_mainwd):
         time_format = "%Y-%m-%d %H:%M:%S"
         create_st = self.date_creatfile_st.text()
         create_ed = self.date_creatfile_ed.text()
-        mod_range_st = float(self.date_modfile_st.text())
-        mod_range_ed = float(self.date_modfile_ed.text())
-        vst_range_st = float(self.date_visfile_st.text())
-        vst_range_ed = float(self.date_visfile_ed.text())
+        mod_range_st = float(self.date_modfile_st.text()) * 60 * 60
+        mod_range_ed = float(self.date_modfile_ed.text()) * 60 * 60
+        vst_range_st = float(self.date_visfile_st.text()) * 60 * 60
+        vst_range_ed = float(self.date_visfile_ed.text()) * 60 * 60
 
         def _t():
             self.__task_lock.acquire()

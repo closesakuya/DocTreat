@@ -193,7 +193,7 @@ background-color: rgb(185, 209, 205);</string>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_1">
       <attribute name="title">
@@ -309,6 +309,9 @@ background-color: rgb(185, 209, 205);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
+       <property name="maximum">
+        <double>99999999.000000000000000</double>
+       </property>
        <property name="value">
         <double>1.000000000000000</double>
        </property>
@@ -337,6 +340,9 @@ background-color: rgb(185, 209, 205);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maximum">
+        <double>99999999.000000000000000</double>
        </property>
        <property name="value">
         <double>48.000000000000000</double>
@@ -380,6 +386,9 @@ background-color: rgb(185, 209, 205);</string>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
+       <property name="maximum">
+        <double>99999999.000000000000000</double>
+       </property>
        <property name="value">
         <double>48.000000000000000</double>
        </property>
@@ -395,6 +404,9 @@ background-color: rgb(185, 209, 205);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="maximum">
+        <double>99999999.000000000000000</double>
        </property>
        <property name="value">
         <double>1.000000000000000</double>
